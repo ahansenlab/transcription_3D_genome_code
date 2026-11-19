@@ -7,7 +7,7 @@ To use the code in this directory, create a Python environment with the followin
 - noctiluca
 - bild
 
-Then, activate the environment, navigate to the `pipeline` directory, and follow the instructions in the README there to install the processing pipeline.
+Then, activate the environment, navigate to the `pipeline` directory, and follow the instructions in the README there to install the Fyrtarn pipeline and related dependencies.
 
 ## Instructions
 Use `multirun.py` in the `pipeline` subdirectory to run the Fyrtarn pipeline on a set of live-cell movies. This script requires a TSV file containing the movies to process and the directories to create for the results. After processing, use the `evaluate.ipynb` notebook to perform manual quality control. Use `ExportQCtracks_clean.py` in the `BILD` subdirectory to extract manual-QC-approved tracks from the Fyrtarn output file structure, then run `load_and_filter_tracks.py` to perform automated filtering of outlier points and jumps.

@@ -1,0 +1,100 @@
+general:
+  time: 30.0
+  lasers:
+    0: 640
+    1: 488
+    2: 561
+    
+deconvolution:
+  iters: 20
+  alpha: 0.0001
+
+deskewing:
+  angle: 30
+  pixel: 145
+  step: 300
+  order: 1
+
+segmentation:
+  channel: 1
+  intensity:
+    lower: 150
+    upper: 1000
+  sigma: 3
+  erode: 11
+  dilate: 11
+  volume:
+    lower: 25000
+    upper: 500000
+  pad: 5
+
+detection:
+  channels:
+    1:
+      radius:
+        lower: 0.75
+        upper: 1.50
+      response: 400
+    2:
+      radius:
+        lower: 0.75
+        upper: 1.5
+      response: 350
+  nearby: 10.0
+  sister: 3.0
+
+tracking:
+  nuclei:
+    search: 40.0
+    length: 60
+  features:
+    search: 10.0
+    length: 15
+    memory: 5
+
+measuring:
+  search: 5.0
+  overlap: 5
+
+movies:
+  fps: 30
+  channels:
+    0:
+      intensity:
+        lower: 75
+        upper: 700
+      color: [0,255,255]
+    1:
+      intensity:
+        lower: 75
+        upper: 800
+      color: [0,255,0]
+    2:
+      intensity:
+        lower: 75
+        upper: 400
+      color: [255,0,255]
+
+beads:
+  finding:
+    channels:
+      0:
+        radius: 3.00
+        response:
+          lower: 150
+          upper: 2000
+      1:
+        radius: 4.50
+        response:
+          lower: 200
+          upper: 2000
+      2:
+        radius: 5.00
+        response:
+          lower: 200
+          upper: 2500
+    separation: 10.0
+    search: 3.0
+  fitting:
+    days: 7
+    alpha: 0.001

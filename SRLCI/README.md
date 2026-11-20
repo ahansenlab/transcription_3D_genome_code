@@ -3,9 +3,9 @@ This directory contains code to extract 3D distance and MS2 intensity trajectori
 
 ## Installation and dependencies
 To use the code in this directory, create a Python environment with the following packages:
-- bayesmsd
-- noctiluca
-- bild
+- bayesmsd 0.1.7
+- noctiluca 0.1.4
+- bild 0.0.5
 
 Then, activate the environment, navigate to the `pipeline` directory, and follow the instructions in the README there to install the Fyrtarn pipeline and remaining dependencies.
 

@@ -2,24 +2,24 @@
 This directory contains code to analyze and visualize genomics data.
 ## Dependencies
 To use the code in this directory, create a Python environment with the following packages:
-- cooler
-- cooltools
+- cooler 0.10.4
+- cooltools 0.7.1
 - CoolBoxMod (see https://github.com/varshiniramanathan/CoolBoxMod)
-- macs3
-- bwa-mem2
-- bowtie2
-- sambamba
-- astropy
-- pandas
-- scipy
-- numpy
-- matplotlib
-- h5py
-- pygenometracks
-- statannotations
-- bioframe
-- xlrd
-- samtools
+- macs3 3.0.4
+- bwa-mem2 2.2.1
+- bowtie2 2.5.4
+- sambamba 1.0.1
+- astropy 6.1.2
+- pandas 1.5.3
+- scipy 1.11.4
+- numpy 1.23.5
+- matplotlib 3.6.2
+- h5py 3.10.0
+- pygenometracks 3.8
+- statannotations 0.7.2
+- bioframe 0.5.1
+- xlrd 2.0.2
+- samtools 1.19
 You will also need to download the wigToBigWig utility from UCSC (get it here: https://hgdownload.gi.ucsc.edu/admin/exe/)
 ## Instructions
 To create .cool and .mcool files from raw RCMC reads, run microcprocessing.py.

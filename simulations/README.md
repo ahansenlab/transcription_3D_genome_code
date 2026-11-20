@@ -18,6 +18,10 @@ To run the code in this directory, create a Python environment with the followin
 Installation should take a few minutes with a package manager like conda.
 
 ## Instructions
-`compSim.py` is the main script used to perform polymer simulations. This script is run from the command line. After running, it is recommended to rename the output directory to something descriptive.
+`compSim.py` is the main script used to perform polymer simulations. This script is run from the command line. After running, it is recommended to rename the output directory (created within the directory specified by the `outpath` argument) to something descriptive.
+
+Example usage (for a local decompaction model):
+
+```python compSim.py numsave=2000 outpath=./sim_outputs epsB=0.2 epsC=0.2 epsBC=0.2 epsA=0 comppath=/path/to/repo/simulations/setup_files/comps_sticky_except_upstream_and_Fbn2.dat ctcfpath=/path/to/repo/simulations/setup_files/ctcf.dat microcomppath=/path/to/repo/simulations/setup_files/microcomps.dat polpath=/path/to/repo/simulations/setup_files/pols.dat polpermL=1 polpermR=1```
 
 The `analysis.ipynb` notebook is used to perform analyses and create visualizations on the outputs of `compSim.py`.

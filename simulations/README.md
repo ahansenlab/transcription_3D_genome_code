@@ -15,6 +15,8 @@ To run the code in this directory, create a Python environment with the followin
 - cooltools 0.7.1
 - cooler 0.10.2
 
+Installation should take a few minutes with a package manager like conda.
+
 ## Instructions
 `compSim.py` is the main script used to perform polymer simulations. This script is run from the command line. After running, it is recommended to rename the output directory to something descriptive.
 

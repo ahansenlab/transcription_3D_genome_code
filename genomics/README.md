@@ -20,7 +20,7 @@ To use the code in this directory, create a Python environment with the followin
 - bioframe 0.5.1
 - xlrd 2.0.2
 - samtools 1.19
-You will also need to download the wigToBigWig utility from UCSC (get it here: https://hgdownload.gi.ucsc.edu/admin/exe/)
+Installation should take a few minutes with a package manager like conda. You will also need to download the wigToBigWig utility from UCSC (get it here: https://hgdownload.gi.ucsc.edu/admin/exe/).
 ## Instructions
 To create .cool and .mcool files from raw RCMC reads, run microcprocessing.py.
 
